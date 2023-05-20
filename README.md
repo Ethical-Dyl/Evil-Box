@@ -9,12 +9,12 @@ Starting with a nmap scan I found the following services being run on the machin
 
 # Web Enumeration # 
 
-Begining the enumeration by adding the IP to my host file, and navigating to the webpage I see that we do indeed have a webpage. 
+Begining the enumeration by adding the IP to my host file, and navigating to the webpage.
 
 <img width="734" alt="image" src="https://github.com/Ethical-Dyl/Evil-Box/assets/66540055/cac1f40b-bcfa-42c7-95ed-a8ad7fd210f3">
 
 
-I will begin running a gobuster scan in the background while parsing through the landing page to ensure there is no untruned stone.
+I will begin running a gobuster scan in the background while parsing through the landing page to ensure there is no unturned stone.
 
 Upon the scan completing I see that there are two promising hits, robots.txt and secret.
 
@@ -61,7 +61,6 @@ Utiliizing ssh2john we can get the hash for john to crack
 
 <img width="244" alt="image" src="https://github.com/Ethical-Dyl/Evil-Box/assets/66540055/47715eca-0d4d-4a6b-8c6e-1930df160f0e">
 
-After john finished up we get the password and can now ssh into the box.
 
 <img width="366" alt="image" src="https://github.com/Ethical-Dyl/Evil-Box/assets/66540055/e350cc04-b8d5-4993-bbeb-db5d77ea80ce">
  
